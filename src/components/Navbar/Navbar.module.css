@@ -1,0 +1,85 @@
+.navbar {
+  position: relative;
+  background-color: rgb(250, 215, 215);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #1ecbf3;
+}
+
+.languageDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.languageButton {
+  background-color: transparent;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #17c6f2;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.languageButton:hover {
+  color: #1ecbf3;
+}
+
+.languageDropdown ul {
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  display: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.languageDropdown:hover ul {
+  display: block;
+  top: 100%;
+}
+
+.languageDropdown ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.languageDropdown ul li:hover {
+  background-color: #555;
+  color: #17c6f2;
+}
